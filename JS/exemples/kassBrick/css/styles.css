@@ -1,0 +1,120 @@
+*{
+	box-sizing:border-box;
+	user-select:none;
+}
+
+html, body{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+}
+
+#game{
+	position:absolute;
+	top:0px;
+	/*left:calc(50% - 400px);*/
+	left:0px;
+	width:1000px;
+	height:100%;
+	border:2px solid grey;
+	background-color: #19334d;
+	margin:0px;
+	padding:0px;
+background: #8cb3d9;
+background: -moz-linear-gradient(top,  #8cb3d9 0%, #0d1a26 100%);
+background: -webkit-linear-gradient(top,  #8cb3d9 0%,#0d1a26 100%);
+background: linear-gradient(to bottom,  #8cb3d9 0%,#0d1a26 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8cb3d9', endColorstr='#0d1a26',GradientType=0 );
+
+}
+
+.player{
+	width:150px;
+	height:10px;
+	background-color:#4080bf;
+	position:absolute;
+	bottom:50px;
+	left:calc(50% - 75px);
+	
+	border:1px solid #ecf2f9;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+	
+}
+
+.ball{
+	width:20px;
+	height:20px;
+	/*border-radius:50%;*/
+	border:1px solid #ecf2f9;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#79a6d2;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+}
+
+.bricks{
+	position:absolute;
+	width:96px;
+	height:96px;
+	border:2px solid #4080bf;
+	transition:all 0.15s;
+	border-radius:0px;
+	background-color:#c6d9ec;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.45);
+}
+
+#consigne{
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	height:50px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:#FFFFFF;
+	width:100%;
+	font-family: 'Open Sans', sans-serif;
+	animation-name:animBounce;
+	animation-fill-mode:both;
+	animation-direction:alternate-reverse;
+	animation-duration:0.25s;
+	animation-iteration-count:infinite;
+}
+
+@keyframes animBounce{
+	from:{transform:scale(1);}
+	to{transform:scale(1.1);}
+}
+
+#nbBalls{
+	position:absolute;
+	top:0px;
+	left:1000px;
+	width:40px;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	overflow:hidden;
+}
+
+#nbBalls .ball{
+	position:relative;
+	top:0px;
+	left:0px;
+	margin-top:2px;
+	margin-bottom:2px;
+	transition:all 1.5s;
+}

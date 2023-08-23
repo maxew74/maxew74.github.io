@@ -1,0 +1,27 @@
+{
+	"title":"HTML / CSS",
+	"title_2":"Exercice en autonomie",
+	"title_3":"Auteur : Maxime Dressenetto-Pierrefitte ( max.dressenetto@gmail.com )",
+	"content":	[
+					{
+						"id":"suj",
+						"title":"Sujet",
+						"template":"templates/sujet.html"
+					},
+					{
+						"id":"inf",
+						"title":"Informations complémentaires",
+						"template":"templates/infos.html"
+					},
+					{
+						"id":"res",
+						"title":"Ressources",
+						"template":"templates/ressources.html"
+					},
+					{
+						"id":"sol",
+						"title":"Solutions de l'exercice",
+						"template":"templates/solution.html"
+					}
+				]
+}

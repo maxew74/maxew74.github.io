@@ -1,0 +1,79 @@
+﻿<div class="myText">
+	<p class="chapeau">Quelques propriétés CSS associées à l'affichage des textes :</p>
+
+	<pre class="code">
+		font-family * "Arial Black", Arial, Verdana, serif * Typographie
+		color * cod * Couleur
+		font-size * 14px * taille
+		font-weight * normal | bold | bolder | lighter | nombre * Épaisseur
+		font-style * normal | italic | oblique * Style
+		text-decoration * none | overline | line-through | underline * Décoration
+		text-align * left | center | right | justify * Alignement
+		text-indent * 50px * Indentation de la 1ère ligne
+		text-shadow * 10px 10px 5px #CCCCCC * Ombre (décalage horizontal, décalage vertical, adoucissement, couleur)</pre>
+	  <!--
+		<strong>font-family</strong>: "Arial Black", Arial, Verdana, serif<strong>;</strong> <span class="exemple">Typographie</span>
+		
+		<br/><br/>
+		
+		<strong>color</strong>: #64a954<strong>;</strong> <span class="exemple">Couleur</span>
+		
+		<br/><br/>
+		
+		<strong>font-size</strong>:14px; <span class="exemple">Taille</span>
+		
+		<br/><br/>
+		
+		<strong>font-weight</strong>: bold<strong>;</strong> (bolder, lighter, normal) <span class="exemple">Epaisseur</span>
+		
+		<br/><br/>
+		
+		<strong>font-style</strong>: italic<strong>;</strong> (oblique,normal) <span class="exemple">Style</span>
+		
+		<br/><br/>
+		
+		<strong>text-decoration</strong>: underline<strong>;</strong> (overline, line-through, blink, none) <span class="exemple">Décoration</span> 
+		
+		<br/><br/>
+		
+		<strong>text-align</strong>: left<strong>;</strong> (center, right, justify) <span class="exemple">Alignement</span>
+		
+		<br/><br/>
+		
+		<strong>text-transform</strong>: uppercase<strong>;</strong> (lowercase, capitalize) <span class="exemple">Alignement</span>
+		
+		<br/><br/>
+		
+		<strong>text-indent</strong>: 50px<strong>;</strong> <span class="exemple">Indentation de la 1ère ligne</span>
+
+		<br/><br/>
+		
+		<strong>text-shadow</strong>: 10px 10px 5px #CCCCCC<strong>;</strong> (décalage horizontal, décalage vertical, adoucissement, couleur) <span class="exemple">Ombre sur le texte</span> 
+		
+		-->
+	</div>
+	<div class="myText">
+		<strong>@font-face</strong> Permet d'intégrer des fonts (typographies) personnalisées
+		<br/>
+		<pre class = "exemple">
+
+			@font-face {
+				font-family: 'SFCartoonistHandRegular';
+				src: url('../font/SF_Cartoonist_Hand-webfont.eot');
+				src: url('../font/SF_Cartoonist_Hand-webfont.eot?#iefix') format('embedded-opentype'),
+				url('../font/SF_Cartoonist_Hand-webfont.woff') format('woff'),
+				url('../font/SF_Cartoonist_Hand-webfont.ttf') format('truetype'),
+				url('../font/SF_Cartoonist_Hand-webfont.svg#SFCartoonistHandRegular') format('svg');
+				font-weight: normal;
+				font-style: normal;
+			}
+
+		</pre>
+	</div>
+	<div class="myText">
+		<p class="chapeau">Ressources :</p>
+		<ul>
+			<li><strong>Google fonts</strong> : <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a> (ressources typos/css)</li><br/>
+			<li><strong>Fonts Squirrel</strong> : <a href="http://www.fontsquirrel.com/" target="_blank">http://www.fontsquirrel.com/</a> (ressources typos/css)</li><br/>
+		</ul>
+	</div>

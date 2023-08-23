@@ -1,0 +1,104 @@
+<div class="myText">
+    <p>Les <strong>Grilles</strong> sont des éléments dont le contenu s'organise automatiquement (sur 2 dimensions).
+        Pour cela, on utilise la propriété CSS <strong>display</strong>, avec pour valeur <strong>grid</strong>.
+        Le système de grilles CSS est flexible et peut faciliter la conception de sites responsives.
+    </p>
+    
+    <div id="gridContainer">
+        <!-- Reperes -->
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        <div class="item_model"></div>
+        
+        <!-- piste verticale -->
+        <div class="vtrack trackVisual"><div class=".label">Piste "colonne"<br/>(column)</div></div>
+
+        <!-- ligne horizontale -->
+        <div class="htrack trackVisual"><div class="label">Piste "rangée"<br/>(row)</div></div>
+
+         <!-- ligne verticale -->
+         <div class="vlineVisual lineVisual"><div class="line"></div></div>
+         <div class="vlineLabel lineLabel"><div class="label">Ligne verticale</div></div>
+ 
+         <!-- ligne horizontale -->
+         <div class="hlineVisual lineVisual"><div class="line"></div></div>
+         <div class="hlineLabel lineLabel"><div class="label">Ligne horizontale</div></div>
+
+         <!-- Conteneur -->
+         <div class="gridContainer"></div>
+         <div class="containerLabel">Conteneur<br/>{display:grid}</div>
+
+        <!-- Cellule -->
+        <div class="cellContainer">Cellule (cell)</div>
+        <!-- Zone -->
+        <div class="zoneContainer">Zone (area)</div>
+
+
+    </div>
+</div>
+<div class="myText">
+    <p class="chapeau">Méthode :</p>
+    <ul>
+        <li>On définit un élement comme un <strong>conteneur</strong> de type <srtrong>grille</srtrong> (display:grid;)</li>
+        <li>On définit les <strong>pistes verticales</strong> (grid-template-columns)</li>
+        <li>On définit les <strong>pistes horizontales</strong> (grid-template-rows)</li>
+        <li>... Ou bien des <strong>zones</strong> de grille (grid-template-areas)</li>
+        <li>On configure les <strong>goutières</strong> (gap)</li>
+        <li>On définit <strong>l'emplacement</strong> des items dans la grille</li>
+        <li>... Ou bien on met en place une organisation automatique</li>
+    </ul>
+</div>
+
+<div class="myText">
+    <p class="chapeau">Propriétés du conteneur :</p>
+    <pre class="code">
+        grid-template-columns *  * Pistes verticales
+        grid-template-rows *  * Pistes horizontales
+        grid-auto-columns * * Pistes verticales automatiques
+        grid-auto-rows * * Pistes horizontales automatiques
+        grid-template-areas *  * Zones de grilles
+        column-gap * px * espacement vertical
+        row-gap * px * espacement horizontal
+        grid-auto-flow * column | row | dense * Organisation automatique </pre>
+
+    <p class="chapeau">Propriétés des éléments :</p>
+        <pre class="code">
+            grid-column-start * numero | nom * Ligne verticale de début
+            grid-column-end * numero | nom * Ligne verticale de fin
+            grid-row-start * numero | nom * Ligne horizontale de début
+            grid-row-end * numero | nom * Ligne horizontale de fin
+            grid-area * numero / numero / numero / numero | nom * Zone occupée par l'item</pre>
+           <!-- justify-self * start | end | center | strech * alignement horizontal l'item dans sa zone</pre>
+            align-self * start | end | center | strech * alignement vertical l'item dans sa zone</pre>-->
+</div>
+
+<div class="myText">
+    <p class="chapeau">Ressources :</p>
+    <div class="imgContainer">
+        <a href="https://css-tricks.com/wp-content/uploads/2022/02/css-grid-poster.png" target="_blank">
+            <img class="image" src="https://css-tricks.com/wp-content/uploads/2022/02/css-grid-poster.png" />
+        </a>
+    </div>
+</div>

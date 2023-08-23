@@ -1,0 +1,71 @@
+﻿<div class="myText">
+	<p class="chapeau">Les tableaux :</p>
+	
+	<strong>&lt;table border="1"&gt;</strong><br/><br/>
+	<strong>&lt;caption&gt;</strong>Titre tableau<strong>&lt;/caption&gt;</strong> : <span class="exemple">Titre du tableau</span><br/>
+		<span class="marg2">	<strong>&lt;tr&gt;</strong> : <span class="exemple">balise ouvrante LIGNE</span><br/></span>
+		<span class="marg3">	<strong>&lt;th colspan="3"&gt;</strong>Mon tableau de chiffres 1<strong>&lt;/th&gt;</strong> : <span class="exemple">CELLULE "TITRE"</span><br/></span>
+		<span class="marg2">	<strong>&lt;/tr&gt;</strong> : <span class="exemple">balise fermante LIGNE</span><br/></span>
+		<span class="marg2">	<strong>&lt;tr&gt;</strong><br/></span>
+		<span class="marg3">	<strong>&lt;td&gt;</strong>1<strong>&lt;/td&gt;</strong> : <span class="exemple">CELLULE NORMALE</span><br/></span>
+		<span class="marg3">	<strong>&lt;td&gt;</strong>2<strong>&lt;/td&gt;</strong><br/></span>
+		<span class="marg3">	<strong>&lt;td&gt;</strong>3<strong>&lt;/td&gt;</strong><br/></span>
+		<span class="marg2">	<strong>&lt;/tr&gt;</strong><br/></span>
+		<span class="marg2">	<strong>&lt;tr&gt;</strong><br/></span>
+		<span class="marg3">	<strong>&lt;td&gt;</strong>4<strong>&lt;/td&gt;</strong><br/></span>
+		<span class="marg3">	<strong>&lt;td&gt;</strong>5<strong>&lt;/td&gt;</strong><br/></span>
+		<span class="marg3">	<strong>&lt;td&gt;</strong>6<strong>&lt;/td&gt;</strong><br/></span>
+		<span class="marg2">	<strong>&lt;/tr&gt;</strong><br/></span>
+	<strong>&lt;/table&gt;</strong> : <span class="exemple">balise fermante du tableau</span><br/>
+
+	<p class="chapeau">Remarque : </p>
+	<p>Les attributs <strong>colspan</strong> et <strong>rowspan</strong> permettent de définir l'étendue d'une case sur plusieurs colones ou plusieurs lignes.</p>
+	
+	<br/>
+	<br/>
+	
+	<div class="demo">
+	<table border="1">
+		<caption>Titre tableau</caption>
+		<tr><th colspan="3">Mon tableau de chiffres 1</th></tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+			<td>6</td>
+		</tr>
+	</table>
+	<br/>
+	<table border="1">
+		<caption>Titre tableau</caption>
+		<tr><th colspan="3">Mon tableau de chiffres 2</th></tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td colspan="3">4</td>
+		</tr>
+	</table>
+	<br/>
+	<table border="1">
+		<caption>Titre tableau</caption>
+		<tr><th colspan="3">Mon tableau de chiffres 3</th></tr>
+		<tr>
+			<td rowspan="3">1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>5</td>
+		</tr>
+	</table>
+	
+	</div>
+	</div>

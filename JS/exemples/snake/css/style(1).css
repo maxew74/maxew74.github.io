@@ -1,0 +1,182 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: 'VT323', monospace;
+	box-sizing:border-box;
+}
+
+html, body{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background-color:#ff0000;
+}
+ /* Conteneur principal du jeu */
+#game{
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background-color:#161616;
+	overflow:hidden;
+}
+/* Compteurs de vitesse et de score */
+#ui{
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:15px;
+	color:rgba(255,255,255,0.5);
+	font-size:20pt;
+	font-weight:bold;
+}
+
+#gameTitleContainer{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	z-index:10;
+	/*background-color:rgba(255,0,0,1);*/
+}
+
+#gameTitle{
+	font-size:80pt;
+	animation-name:animGameTitle;
+	animation-fill-mode:both;
+	animation-direction:alternate-reverse;
+	animation-iteration-count:infinite;
+	animation-duration:3s;
+}
+
+@keyframes animGameTitle{
+	0%{
+		color:#1f58ba;
+	}
+	50%{
+		color:#1f7eba;
+	}
+	100%{
+		color:#1fb2ba;
+	}
+}
+
+#gameBaseline{
+	font-size:40pt;
+	animation-name:animGameTitle;
+	animation-fill-mode:both;
+	animation-iteration-count:infinite;
+	animation-direction:alternate-reverse;
+	animation-duration:2s;
+	animation-delay:1s;
+}
+
+#buttonStart{
+	margin-top:50px;
+	font-size:20pt;
+	animation-name:animGameTitle;
+	animation-fill-mode:both;
+	animation-iteration-count:infinite;
+	animation-direction:alternate-reverse;
+	animation-duration:0.5s;
+	animation-delay:2s;
+}
+
+
+/*
+.snakePart:nth-last-child(1){transform:scale(0.20);}
+.snakePart:nth-last-child(2){transform:scale(0.40);}
+.snakePart:nth-last-child(3){transform:scale(0.80);}
+*/
+/* style des parties du corps du serpent */
+.snakePart{
+
+	width:1px;
+	height:1px;
+	
+	position:absolute;
+	top:-100px;
+	left:-100px;
+	/*background-color:#00FF00;*/
+
+	animation-duration:1s;
+	animation-name:animSnakePart;
+	animation-iteration-count:infinite;
+	animation-fill-mode:both;
+	animation-direction:alternate;
+}
+
+.deadSnake{
+	width:1px;
+	height:1px;
+	position:absolute;
+	/*background-color:#FF0000;*/
+	animation-name:deathSnake;
+	animation-duration:0.5s;
+	animation-fill-mode:backwards;
+	animation-iteration-count:1;
+}
+
+#target{
+	position:absolute;
+}
+
+#target #targetCenter{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border-radius:10px;
+	animation-duration:0.5s;
+	animation-name:animTarget;
+	animation-iteration-count:infinite;
+	animation-fill-mode:both;
+	animation-direction:alternate;
+}
+
+@keyframes animTarget{
+	0%{
+		background-color:rgba(255,255,255,0.2);
+	}
+	100%{
+		background-color:rgba(255,255,255,1);
+	}
+}
+/*.snakePart:nth-child(3n +1){background-color:#1f58ba;}
+.snakePart:nth-child(3n+2){background-color:#1f7eba;}
+.snakePart:nth-child(3n+3){background-color:#1fb2ba;}*/
+
+@keyframes animSnakePart{
+	0%{
+		background-color:#1f58ba;
+	}
+	50%{
+		background-color:#1f7eba;
+	}
+	100%{
+		background-color:#1fb2ba;
+	}
+}
+
+@keyframes deathSnake{
+	0%{
+		transform:scale(1);
+		background-color:rgba(255, 0, 0,1);
+	}
+	100%{
+		transform:scale(0.1);
+		background-color:rgba(255,0,0,0);
+		border-radius:50px;
+	}
+}

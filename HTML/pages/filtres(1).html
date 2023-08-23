@@ -1,0 +1,74 @@
+﻿   <div class="myText">
+		<p class="chapeau">Filtres :</p>
+		<p>Pour appliquer un filtre, on définit ainsi la propriété <strong>filter : type</strong>(<strong> valeur </strong>)<strong>;</strong>
+		<p>Il est possible d'appliquer plusieurs filtre à un même élément. Il faut pour cela séparer les différentes déclaration par un espace.</p>
+	<!--<br/>
+	<ul >
+			<li><strong>grayscale</strong> (0-1) <span class="exemple">niveaux de gris</span></li>
+			<li><strong>blur</strong> (px) <span class="exemple">flou</span></li>
+			<li><strong>saturate</strong> (0-1) <span class="exemple">saturation</span></li>
+			<li><strong>sepia</strong> (0-1) / (0%-100%) <span class="exemple">effet sépia</span></li>
+			<li><strong>hue-rotate</strong> (0-360deg) <span class="exemple">teinte (deg)</span></li>
+			<li><strong>invert</strong> (1) <span class="exemple">inversion de couleurs</span></li>
+			<li><strong>brightness</strong> (0...) <span class="exemple">luminosité</span></li>
+			<li><strong>contrast</strong> (0...) <span class="exemple">contrastes</span></li>
+			<li><strong>opacity</strong> (0-1) <span class="exemple">opacité</span></li>
+		</ul>
+	-->
+<div class="filters">
+	<div class="demo">
+		<img src="images/monster.jpg" title="image originale" alt="image originale" class="images"/>
+		<img src="images/monster.jpg" title="grayscale(1)" alt="grayscale(1)" class="images" id="filtre_1" />
+		<img src="images/monster.jpg" title="saturate(8)" alt="saturate(8)" class="images" id="filtre_2"  />
+		<img src="images/monster.jpg" title="blur(5px)" alt="blur(5px)" class="images" id="filtre_3"  />
+		<img src="images/monster.jpg" title="sepia(0.8)" alt="sepia(0.8)" class="images" id="filtre_4"  />
+		<img src="images/monster.jpg" title="hue-rotate(90deg)" alt="hue-rotate(90deg)" class="images" id="filtre_5"  />
+		<img src="images/monster.jpg" title="invert(1)" alt="invert(1)" class="images" id="filtre_6"  />
+		<img src="images/monster.jpg" title="brightness(1.5)" alt="image originale" class="images" id="filtre_7"  />
+		<img src="images/monster.jpg" title="contrast(2)" alt="contrast(2)" class="images" id="filtre_8"  />
+		<img src="images/monster.jpg" title="opacity(0.5)" alt="opacity(0.5)" class="images" id="filtre_9"  />
+	</div>
+
+	<pre class="code">
+		grayscale *  (0-1) | % * niveaux de gris
+		blur * (px) * flou
+		saturate *  (0-1) | % * saturation
+		sepia *  (0-1)  | % * effet sepia
+		hue-rotate *  0 - 360 deg * teinte
+		invert * (0-1) * inversion de couleurs
+		brightness * (0-1) * luminosité
+		contrast * (0-...) * constrastes
+		opacity *  (0-1) | % * opacité</pre>
+	</div>	
+	
+	
+	</div>
+
+<div class="myText">
+	<p class="chapeau">Modes de fusion :</p>
+	<pre class="code">
+		mix-blend-mode *  color, color-burn, multiply, darken, lighten, ... * mode de fusion</pre>
+	<div class="demo">
+		<img src="images/monster.jpg" title="color-burn" alt="image originale" class="blendmode"/>
+	</div>
+</div>
+
+<div class="myText">
+	<p class="chapeau">Clipping :</p>
+	<pre class="code">
+		clip-path *  circle(r), ellipse(l h at x y), polygon(...), path('svg path') * découpage de l'élément</pre>
+	<div class="demo">
+		<img src="images/monster.jpg" title="polygon(...)" alt="image originale" class="clipped"/>
+	</div>
+		
+</div>
+
+<div class="myText">
+	<p class="chapeau">Ressources :</p>
+	<ul>
+		<li>Filtres : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/filter">https://developer.mozilla.org/en-US/docs/Web/CSS/filter</a></li>
+		<li>Modes de fusion : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode">https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode</a></li>
+		<li>Clipping : <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path">https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path</a></li>
+	</ul>
+</div>
+

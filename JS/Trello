@@ -1,0 +1,50 @@
+Prérequis :
+
+- bases en HTML/CSS (programme de Bachelor Designer 1ère année)
+
+
+Objectifs :
+
+    Mettre à profit les connaissances et savoir-faire acquis en HTML et CSS
+    Mettre en place l’architecture minimale pour pouvoir développer en javascript
+    Acquérir les bases essentielles de la programmation en Javascript
+    Créer un script JS “From Scratch”
+    Ajouter de l’interactivité à un site ou une application HTML (ajout d’événements utilisateur)
+    Utiliser des librairies (jQuery)
+    Accéder et manipuler le contenu du DOM HTML
+    Modifier et animer les propriétés de style des éléments
+	
+
+Travail attendu :
+	
+Créer un mini jeu en utilisant les techniques abordées pendant le cours de JAVASCRIPT.
+Éléments souhaités :
+
+    Début
+    Gameplay (déroulement du jeu)
+    Fin (gagné/perdu/neutre/autre)
+    Rejouabilité/variantes
+    Affichage de compteur(s) (vies, score, autre…)
+    Absence de bug(s)
+
+
+Rendus :
+
+    dossier *.zip contenant l'ensemble des fichiers de votre jeu
+    nommage : nom_prenom_titre.zip
+    transfert via Trello au plus tard le mercredi 10/04/2019 (soir)
+    ajout d'une note éventuelle :
+        précisions que vous souhaitez apporter sur votre travail
+        remarques sur le cours (points positifs/négatifs, pistes d'amélioration)
+		
+
+Qualités attendues :
+    Créativité : inventivité, originalité, esthétique
+    Rigueur : qualité du code, respect des consignes, logique
+    Investissement personnel : motivation, autonomie, "proactivité"
+
+
+
+
+
+

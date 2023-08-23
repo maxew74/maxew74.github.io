@@ -1,0 +1,192 @@
+﻿<div class="myText">
+	<p class="chapeau">Les formulaires :</p>
+	
+	<strong>&lt;form name="formulaire"&gt;</strong> : <span class="exemple">balise ouvrante du formulaire</span>
+	<br/>
+	<br/>
+		<form name="formulaire">
+		<br/>
+		<strong class="marg1">&lt;fieldset&gt;</strong> <span class="exemple">ensemble de champs</span>
+		<br/>
+		<br/>
+		<strong class="marg2">&lt;legend&gt;</strong>Informations personnelles :<strong>&lt;/legend&gt;</strong> <span class="exemple">légende d'ensemble de champs</span>
+		<br/><br/>
+		<!-- INPUT TEXTS -->
+		<strong class="marg2">&lt;label for="</strong><strong>name_input<strong></strong>"&gt;</strong>Nom<strong>&lt;/label&gt;</strong> : <span class="exemple">libellé de champ</span>
+		<br/>
+		<strong class="marg2">&lt;input type="text" id="name_input" name="</strong>nom<strong>" placeholder="</strong>Quel est votre nom ?<strong>" required&gt;&lt;/input&gt;</strong> : <span class="exemple">champ de texte</span>
+		<br/><br/>
+		<strong class="marg2">&lt;label for="</strong><strong>firstname_input<strong></strong>"&gt;</strong>Prénom<strong>&lt;/label&gt;</strong> : <span class="exemple">libellé de champ</span>
+		<br/>
+		<strong class="marg2">&lt;input type="text" id="firstname_input" name="</strong>prenom<strong>" placeholder="</strong>Quel est votre prénom ?<strong>" required&gt;&lt;/input&gt;</strong> : <span class="exemple">champ de texte</span>
+		<br/><br/>
+		<strong class="marg1">&lt;/fieldset&gt;</strong>
+		<br/><br/>
+		
+		<div class="demo" style="font-size:12pt;">
+			<!-- INPUT TEXTS -->
+			<fieldset>
+				<legend>Informations personnelles :</legend>
+				
+				<label for="name_imput">Nom</label> :
+				<input id="name_imput" type="text" name="nom" placeholder="Quel est votre nom ?" required></input>
+				<br/><br/>
+				<label for="firstname_imput">Prénom</label> :
+				<input id="firstname_imput" type="text" name="prenom" placeholder="Quel est votre prénom ?" required></input>
+			</fieldset>
+		</div>
+
+		<br/>
+		<hr/>
+		<br/>
+		
+		Email : <strong>&lt;input type="email" name="</strong>email<strong>" placeholder="</strong>Votre email ?<strong>" required&gt;&lt;/input&gt;</strong> : <span class="exemple">champ "email"</span><br/>
+		<br/>
+		<div class="demo" style="font-size:12pt;">
+			<!-- INPUT TEXTS -->
+			<label for="email_input">Email</label> :
+			<input id="email_input" type="email" name="email" placeholder="Votre email ?" required></input>
+		</div>
+		
+		<br/>
+		<hr/>
+		<br/>
+		
+		<!-- TEXTAREA -->
+		Commentaire :<br/>
+		<strong>&lt;textarea name="</strong>commentaire<strong>" placeholder="</strong>Laissez-nous un commentaire...<strong>" rows="</strong>3<strong>" cols="</strong>5<strong>"&gt;&lt;/textarea&gt;</strong>
+		<br/>
+		<span class="exemple">champ de texte multiligne</span>
+		<br/>
+		<br/>
+			<div class="demo" style="font-size:12pt;">		
+			<!-- TEXTAREA -->
+			Commentaire :<br/>
+			<textarea name="commentaire" placeholder="Laissez-nous un commentaire..." rows="3" cols="5"></textarea>
+		
+		</div>
+		
+		<br/>
+		<hr/>
+		
+		<br/>
+		Quelle est votre boisson préférée ?<br/>
+		<strong>&lt;select name="<strong>boisson</strong>"&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="1" selected&gt;</strong>L'eau fraîche et pure<strong>&lt;/option&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="2" &gt;</strong>Le coca ultra-sucré industriel<strong>&lt;/option&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="3" &gt;</strong>Le jus de fruit vitaminé<strong>&lt;/option&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="4" &gt;</strong>Le vin rouge qui pique<strong>&lt;/option&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="5" &gt;</strong>Aucune, je suis un chameau<strong>&lt;/option&gt;</strong><br/>
+		<strong>&lt;/select&gt;</strong> : <span class="exemple">menu déroulant</span>
+		<br/>
+		<br/>
+		<div class="demo" style="font-size:12pt;">		
+			<!-- SELECT -->
+			Quelle est votre boisson préférée ?
+			<select name="boisson">
+				<option value="1" selected>L'eau fraîche et pure</option>
+				<option value="2" >Le coca ultra-sucré industriel</option>
+				<option value="3" >Le jus de fruit vitaminé</option>
+				<option value="4" >Le vin rouge qui pique</option>
+				<option value="5" >Aucune, je suis un chameau</option>
+			</select>
+		</div>
+		
+		<br/>
+		<hr/>
+		<br/>
+		<!-- DATALIST -->
+		<strong>&lt;label for="</strong>ice-cream-choice<strong>"></strong>Choisir un parfum<strong>&lt;/label&gt;</strong> : <br/>
+		<strong>&lt;input list="</strong>ice-cream-flavors<strong>" id="</strong>ice-cream-choice</strong>" <strong>name="</strong>ice-cream-choice<strong>"&gt;</strong>
+		<br/>
+		<strong>&lt;datalist id="</strong>ice-cream-flavors"&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="</strong>Chocolat<strong>"&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="</strong>Noix de coco<strong>"&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="</strong>Menthe<strong>"&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="</strong>Fraise<strong>"&gt;</strong><br/>
+			<strong class="marg1">&lt;option value="</strong>Vanille<strong>"&gt;</strong><br/>
+		<strong>&lt;/datalist&gt;</strong> <span class="exemple">liste de choix</span>
+		
+		<br/>
+		<br/>
+
+		<div class="demo">		
+			<!-- DATALIST -->
+			<label for="ice-cream-choice">Choisir un parfum</label> : 
+			<input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice">
+
+			<datalist id="ice-cream-flavors">
+				<option value="Chocolat">
+				<option value="Noix de coco">
+				<option value="Menthe">
+				<option value="Fraise">
+				<option value="Vanille">
+			</datalist>
+		</div>
+
+		<br/>
+		<hr/>
+
+				
+		<br/>		
+		Quelle couleur préférez-vous ?<br/>
+		<strong>&lt;input type="radio" value="</strong>rouge<strong>" name="</strong>couleur<strong>"&gt;</strong>rouge<strong>&lt;/input&gt;</strong> : <span class="exemple">boutons-radio</span><br/>
+		<strong>&lt;input type="radio" value="</strong>bleu<strong>" name="</strong>couleur<strong>"&gt;</strong>bleu<strong>&lt;/input&gt;</strong><br/>
+		<strong>&lt;input type="radio" value="</strong>vert<strong>" name="</strong>couleur<strong>"&gt;</strong>vert<strong>&lt;/input&gt;</strong><br/>
+		<strong>&lt;input type="radio" value="</strong>jaune<strong>" name="</strong>couleur<strong>"&gt;</strong>jaune<strong>&lt;/input&gt;</strong><br/>
+		
+		<br/>
+		<div class="demo" style="font-size:12pt;">
+			<!-- RADIO BUTTONS -->
+			Quelle couleur préférez-vous ?
+			<input type="radio" value="rouge" name="couleur">rouge</input>
+			 | <input type="radio" value="bleu" name="couleur">bleu</input>
+			 | <input type="radio" value="vert" name="couleur">vert</input>
+			 | <input type="radio" value="jaune" name="couleur">jaune</input>
+		</div>
+		
+		<br/>
+		<hr/>
+		
+		<br/>
+		Quelle(s) activité(s) pratiquez-vous ?<br/>
+		<strong>&lt;input type="checkbox" value="</strong>pingpong<strong>" name="</strong>activite<strong>"&gt;</strong>le ping-pong<strong>&lt;/input&gt;</strong> : <span class="exemple">cases à cocher</span><br/>
+		<strong>&lt;input type="checkbox" value="</strong>danse<strong>" name="</strong>activite<strong>"&gt;</strong>la danse classique<strong>&lt;/input&gt;</strong><br/>
+		<strong>&lt;input type="checkbox" value="</strong>patator<strong>" name="</strong>activite<strong>"&gt;</strong>le tir au "Patator"<strong>&lt;/input&gt;</strong><br/>
+		<strong>&lt;input type="checkbox" value="</strong>tricot<strong>" name="</strong>activite<strong>"&gt;</strong>le tricot<strong>&lt;/input&gt;</strong><br/>
+		<br/>
+		<div class="demo" style="font-size:12pt;">
+			<!-- CHECKBOXES -->
+			Quelle(s) activité(s) pratiquez-vous ?<br/>
+			<input type="checkbox" value="pingpong" name="activite">le ping-pong</input>
+			 | <input type="checkbox" value="danse" name="activite">la danse classique</input>
+			 | <input type="checkbox" value="patator" name="activite">le tir au "Patator"</input>
+			 | <input type="checkbox" value="tricot" name="activite">le tricot</input>
+		</div>
+		
+		<br/>
+		<hr/>
+			<br/>
+		
+		
+			<!-- CHECKBOXES -->
+		<strong>&lt;input type="checkbox" value="</strong>publicite<strong>" name="</strong>publicite<strong>" checked&gt;</strong>Souhaitez-vous recevoir ...<strong>&lt;/input&gt;</strong>
+		<br/>
+		<div class="demo" style="font-size:12pt;">
+			<input type="checkbox" value="publicite" name="publicite" checked>Souhaitez-vous recevoir des dizaines de SPAM par email ? :-)</input>
+		</div>
+	
+	<br/>
+	<hr/>
+	<br/>
+			<!-- RESET SUBMIT BUTTONS -->
+		<strong>&lt;input type="reset" value="</strong>Recommencer<strong>" /&gt;</strong> : <span class="exemple">bouton de réinitialisation</span><br/>
+		<strong>&lt;input type="submit" value="</strong>Envoyer<strong>" /&gt;</strong> : <span class="exemple">bouton d'envoi</span>
+	<br/>
+		<div class="demo" style="font-size:12pt;">
+			<input type="reset" value="Recommencer" /> <input type="submit" value="Envoyer" />
+		</div>
+<br/><br/>
+</form>	
+	<strong>&lt;/form&gt;</strong> : <span class="exemple">balise fermante du formulaire</span> 
+</div>

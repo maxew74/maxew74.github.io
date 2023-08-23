@@ -1,0 +1,57 @@
+<div class="myText">
+    <p>Les <strong>Flexbox</strong> sont des éléments dont le contenu s'organise automatiquement (sur 1 dimension).
+        Pour cela, on utilise la propriété CSS <strong>display</strong>, avec pour valeur <strong>flex</strong>.
+    </p>
+
+    <img src="images/flex_terms.png" />
+
+    <p class="chapeau">Méthode :</p>
+    <ul>
+        <li>On définit un élement comme un <strong>conteneur</strong> de type <srtrong>flexbox</srtrong> (display:flex;)</li>
+        <li>On précise la <strong>direction de l'axe principal</strong> (flex-direction)</li>
+        <li>On configure la <strong>répartition des éléments sur l'axe principal</strong> (justify-content)</li>
+        <li>On configure la <strong>répartition des éléments sur l'axe perpendiculaire</strong> (align-items)</li>
+        <li>On précise le <strong>comportement spécifique de chacun des éléments</strong></li>
+    </ul>
+</div>
+
+<div class="myText">
+    <p class="chapeau">Propriétés du conteneur :</p>
+
+    <pre class="code">
+        flex-direction * column | column-reverse | row | row-reverse * Détermine la direction de l'axe principal
+        justify-content * center | flex-start | flex-end | space-arround | space-between | stretch | baseline * Répartition sur l'axe principal
+        align-items * center | flex-start | flex-end | space-arround | space-between | stretch | baseline * Répartition sur l'axe perpendiculaire
+        align-content * center | flex-start | flex-end | space-arround | space-between | stretch | baseline * Répartition des lignes de contenus sur l'axe perpendiculaire 
+        flex-wrap * wrap | nowrap | wrap-reverse * Autorisation d'affichage sur plusieur lignes
+        flex-flow * ex : flex-start nowrap * Notation raccourcie pour flex-direction + flex-wrap</pre>
+</div>
+
+<div class="myText">
+
+    <p class="chapeau">Propriétés des éléments :</p>
+    <pre class="code">
+        order * nombre * Ordre spécifique dans la liste des éléments
+        flex-shrink * nombre * Facteur de réduction
+        flex-grow * nombre * Facteur d'expansion
+        align-self * center | flex-start | flex-end | space-arround | space-between | stretch | baseline * Alignement spécifique de l'élément</pre>
+</div>
+
+<div class="myText">
+    <p class="chapeau">Démo :</p>
+    <iframe height="300" style="width: 100%;" scrolling="no" title="FLEXBOX" src="https://codepen.io/maxdcodepen/embed/LxBbaa?default-tab=html%2Cresult&editable=true&theme-id=light" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+        See the Pen <a href="https://codepen.io/maxdcodepen/pen/LxBbaa">
+        FLEXBOX</a> by Max D (<a href="https://codepen.io/maxdcodepen">@maxdcodepen</a>)
+        on <a href="https://codepen.io">CodePen</a>.
+    </iframe>
+</div>
+
+
+<div class="myText">
+    <p class="chapeau">Ressources :</p>
+    <div class="imgContainer">
+        <a href="https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png" target="_blank">
+            <img src="https://css-tricks.com/wp-content/uploads/2022/02/css-flexbox-poster.png" class="image" />
+        </a>
+    </div>
+</div>

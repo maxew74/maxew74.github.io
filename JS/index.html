@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width, height:device-height" />
+		
+    <title>CCI Formation Multimédia | GOBELINS | JAVASCRIPT</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" media="handheld" href="css/styles_mobiles.css">
+	
+	<!--<link rel="stylesheet" type="text/css" href="css/stylesSlideShow.css">	
+	<link rel="stylesheet" type="text/css" href="css/stylesMenus.css">	-->
+		
+  </head>
+  
+  <body>
+	<!-- Une ou plusieurs balises HTML pour définir le contenu du document -->
+	<header id="header">
+			<img id="logo" src="images/_logo.png"/>
+			<div class="separation"><span> | </span></div>
+			<div id="headlines">
+				<span id="headLine1">JAVASCRIPT</span><br/>
+				<span id="headLine2">Maxime Dressenetto</span><br/>
+				<span id="headLine3"></span>
+			</div>
+			<!--<div class="separation"><span> | </span></div>-->
+			<div class="title">
+			</div>
+	</header>
+
+	<menu id="sommaire">
+				<div id="intro" class="menu" data-nbpage="3">INTRODUCTION</div>
+				<ul id="menu1_1" class="sousMenu">
+					<li id="intro_1" class="item"><a>Présentation</a></li>
+					<li id="intro_2" class="item"><a>Objectifs</a></li>
+					<li id="intro_3" class="item"><a>Commencer</a></li>
+				</ul>
+				
+				<div id="prog" class="menu" data-nbpage="4">PROGRAMMATION</div>
+				<ul id="menu2_1" class="sousMenu">
+					<li id="prog_1" class="item"><a>Les variables</a></li>
+					<li id="prog_2" class="item"><a>Les conditions (if)</a></li>
+					<li id="prog_3" class="item"><a>Les boucles (for, while)</a></li>
+					<li id="prog_4" class="item"><a>Les fonctions (function)</a></li>
+				</ul>
+				
+				<div id="jquery" class="menu" data-nbpage="4">HTML & CSS</div>
+				<ul id="menu3_1" class="sousMenu">
+					<!--<li id="jquery_1" class="item"><a>Premiers pas</a></li>-->
+					<li id="jquery_1" class="item"><a>Sélection d'un élément</a></li>
+					<li id="jquery_2" class="item"><a>Modification CSS 1/2</a></li>
+					<li id="jquery_3" class="item"><a>Modification CSS 2/2</a></li>
+					<li id="jquery_4" class="item"><a>Modification HTML</a></li>
+				</ul>
+				
+				<div id="anim" class="menu" data-nbpage="3">ANIMATION</div>
+				<ul id="menu4_1" class="sousMenu">
+					<li id="anim_1" class="item"><a>Gestion du temps</a></li>
+					<li id="anim_2" class="item"><a>Effets prédéfinis</a></li>
+					<li id="anim_3" class="item"><a>Fonction Animate</a></li>
+				</ul>
+				
+				<div id="event" class="menu" data-nbpage="3">EVENEMENTS</div>
+				<ul id="menu5_1" class="sousMenu">
+					<li id="event_1" class="item"><a>Souris</a></li>
+					<!--<li id="event_2" class="item"><a>Tactile</a></li>-->
+					<li id="event_2" class="item"><a>Clavier</a></li>
+					<li id="event_3" class="item"><a>Navigateur</a></li>
+				</ul>
+
+				<div id="menuanim" class="menu" data-nbpage="1">EXEMPLES</div>
+				<ul id="menu6_1" class="sousMenu">
+					<li id="menuanim_1" class="item"><a>Démos</a></li>
+					<!-- <li id="menuanim_2" class="item"><a>Sources</a></li> -->
+				</ul>
+	</menu>
+
+	<!-- INTRODUCTION -->
+	
+	<section class="section_container" id="section_1">
+			<section id="intro_1_content" class="content intro_content">
+				<div id="titre_intro_1" class="title_content title_intro">INTRODUCTION | Présentation</div>
+				<div class="container">
+					<p>
+					<strong>Javascript (JS) c'est : </strong>un langage de programmation utilisé dans les productions de type Web en complément de HTML et CSS. Il est généralement écrit dans des fichiers portant une extension *.js intégrés aux pages html et est exécuté par le navigateur du poste de l’utilisateur.</p>
+<p>Il permet notamment d’ajouter de l’interactivité, de manipuler le contenu du page (modification des éléments du DOM) et agir sur le CSS.</p>
+<p>Javascript est interprété de façon synchrone : c’est à dire que les tâches sont exécutées dans l’ordre imposé par le code et que chaque tâche doit être terminée pour que la suite du programme soit exécutée.</p>
+					<br/>
+					<strong>JQuery c'est : </strong>une "boite à outils" développée en <b>javascript pour faciliter</b> le développement des sites web.
+					<br/>
+						<ul>
+							<li>des fonctions permettant <b>d'animer des élements</b> d'une page html,</li>
+							<li>des fonctions pour <b>modifier les éléments HTML et CSS</b>,</li>
+							<li>des fonctions pour ajouter de l'<b>interactivité (événements clavier, souris, navigateur...)</b>,</li>
+							<li>...</li>
+						</ul>
+					
+					<span class="back">( > Retour au sommaire)</span>
+				
+			</section>	
+			
+			<section id="intro_2_content" class="content intro_content">
+				<div id="titre_intro_2" class="title_content title_intro">INTRODUCTION | Objectif(s)</div>
+				<div class="container">
+					<br/>
+					
+					<strong>Objectifs : </strong>
+					<ul>
+						<li>Mettre à profit les connaissances et savoir-faire acquis en HTML et CSS</li>
+						<li>Mettre en place l’architecture minimale pour pouvoir développer en javascript</li>
+						<li>Acquérir les bases essentielles de la programmation en Javascript</li>
+						<li>Créer un script JS “From Scratch”</li>
+						<li>Ajouter de l’interactivité à un site ou une application HTML (ajout d’événements utilisateur)</li>
+						<li>Utiliser des librairies (jQuery)</li>
+						<li>Accéder et manipuler le contenu du DOM HTML</li>
+						<li>Modifier et animer les propriétés de style des éléments</li>
+					</ul>
+
+					<br/>
+					<strong>Travail attendu : </strong>
+					<p>Créer un mini jeu en utilisant les techniques abordées pendant le cours de JAVASCRIPT.</p>
+	
+					<b>Éléments souhaités :</b>
+					<ul>
+						<li>début</li>
+						<li>gameplay (déroulement du jeu)</li>
+						<li>fin (gagné/perdu/neutre/autre)</li>
+						<li>rejouabilité/variantes</li>
+						<li>affichage de compteur(s) (vies, score, autre…)</li>
+						<li>absence de bug(s)</li>
+					</ul>
+
+					
+					<strong>Prérequis :</strong>
+						<ul>
+							<li>bases en <b>HTML</b>/<b>CSS</b> (programme de bachelor 1ère)</li>
+						</ul>
+
+					<strong>Qualités attendues :</strong>
+					<ul>
+						<li>créativité : inventivité, originalité, esthétique</li>
+						<li>rigueur : qualité du code, respect des consignes, logique</li>
+						<li>investissement personnel : motivation, autonomie, "proactivité"</li>
+					</ul>
+
+					
+					</div>
+					<br/>
+					
+					<span class="back">( > Retour au sommaire)</span>
+				
+			</section>	
+			
+			<section id="intro_3_content" class="content intro_content">
+				<div id="titre_intro_3" class="title_content title_intro">INTRODUCTION | Commencer</div>
+				<div class="container">
+					<strong>Architecture du dossier de travail :</strong>
+					<p>-> Créer les dossiers et fichiers nécessaires à obtenir l’arborescence présentée ci-après.</p>
+
+					<img src="images/dossier.jpg" alt="architecture du dossier de travail" class="myMedia" />
+					
+					<p>-> Dans le fichier index.html, intégrer la ligne de code suivante, permettant d’intégrer le fichier javascript à la page, ainsi que la librairie jQuery.</p>
+					<textarea  rows="18">
+<!DOCTYPE html>
+<html>
+&nbsp;&nbsp;<head>
+&nbsp;&nbsp;&nbsp;&nbsp;<meta charset="UTF-8">
+&nbsp;&nbsp;&nbsp;&nbsp;<title> JS-Game</title>
+&nbsp;&nbsp;</head>
+
+&nbsp;&nbsp;<body>
+&nbsp;&nbsp;&nbsp;&nbsp;<!-- ... Contenu HTML -->
+
+&nbsp;&nbsp;&nbsp;&nbsp;<!-- Intégration de jQuery -->
+&nbsp;&nbsp;&nbsp;&nbsp;<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+&nbsp;&nbsp;&nbsp;&nbsp;<!-- Intégration du fichier game.js -->
+&nbsp;&nbsp;&nbsp;&nbsp;<script src="js/game.js"></script>
+
+&nbsp;&nbsp;</body>
+</html>
+					</textarea>
+
+<p>-> Dans le fichier '<b>game.js</b>' écrire :
+	
+		<textarea rows="14">$(document).ready(function()
+{
+	// Ici le document est chargé, je peux écrire mon code jquery...
+	
+	/*
+		NB : Ceci est un commentaire javascript
+		Chaque instruction doit être terminée par " ; "
+	*/
+	
+	console.log("Le fichier game.js a bien été chargé");
+	
+});</textarea>
+	
+<p>-> Vérifier l’apparition du message “Le fichier game.js a bien été chargé” dans la console JS (F12)<br/>
+<img src="images/console_00.jpg" />
+</p>
+					</div>
+					<br/>
+					<span class="back">( > Retour au sommaire)</span>
+			</section>
+	</section>
+	
+	
+		
+	<!-- PROGRAMMATION -->
+	<section class="section_container" id="section_2">
+		<section id="prog_1_content" class="content prog_content">
+			<div id="titre_prog_1" class="title_content title_prog">PROGRAMMATION | Les variables</div>
+			<div class="container">
+			<p>Une variable permet d’associer une valeur à un nom et peut servir à représenter un paramètre du programme (ex : nombre de vies du joueur). Cette valeur peut être modifiée par le programme. Le nommage de la variable ne doit pas être identique à un mot-clé existant dans le langage utilisé.</p>
+			<strong>Types de variables</strong>
+			<ul><li>Nombre (number)</li>
+				<li>Chaîne de caractères (string) « texte ».</li>
+				<li>Booléen  (boolean) true, false.</li>
+				<li>Tableau (array).</li>
+				<li>Objet (object).</li>
+			</ul>
+			<p><strong>Déclaration et affectation :</strong><br/><br/>
+			<textarea rows="12">
+// number (nombre)
+let nbVies = 5; // déclaration d'une variable locale
+var level = 1;  // déclaration d'une variable globale
+const scoreMax = 100; // déclaration d'une constante
+
+// string (texte)
+var nomJoueur = "Hugo";
+
+// boolean (vrai ou faux)
+var modeFacile = false;
+
+// array (tableau)
+var decors = ["désert", "jungle", "ville"];
+
+// json object (objet)
+var player = { name:"Max", age:34 };
+player.age = 37;
+
+			</textarea>
+			</p>
+			
+			<br/>
+			
+			<p><strong>Opérations sur les variables :</strong><br/><br/>
+			Opérations mathématiques (aditions, soustractions,multiplications, divisions, modulo…)<br/>
+			<textarea rows="10">
+nbVies = nbVies + 1 ; // nbVies = 6
+
+var score = nbVies * 2 ; // score = 12
+
+score++ ; // incrémente la variable score
+
+nbVies-- ; // décrémente la variable nbVies
+
+			</textarea>
+			</p>
+
+			<p><strong>Concaténation :</strong><br/><br/>
+			<b>var texte <b>=</b> "Il reste " <b>+</b> nbVies <b>+</b> " vie(s) à " <b>+</b> nomJoueur<b>;</b>
+			<b>console.log ( texte );</b> // affiche « Il reste 6 vie(s) à Hugo »
+			</p>
+			<p>
+				Méthodes sur les string : <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String#m%C3%A9thodes_des_instances" target="_blank">https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/String#m%C3%A9thodes_des_instances</a>
+			</p>
+			</div>
+		</section>
+		<section id="prog_2_content" class="content prog_content">
+			<div id="titre_prog_2" class="title_content title_prog">PROGRAMMATION | Les conditions</div>
+			<div class="container">
+			<p>Les conditions permettent d’exécuter ou non des instructions (bloc de code) en fonction de la validité d’un critère. La condition est exprimée grâce au mot-clé « if ». Elle peut utiliser des valeurs absolues, des variables, les valeurs renvoyées par des méthodes...</p>
+			<p>
+			<strong>Opérateurs de comparaison :</strong>
+			<br/><br/>
+			<b>==</b> « égal à »<br/>
+			<b>!=</b> « different de »<br/>
+			<b>&gt;</b> « strictement supérieur à »<br/>
+			<b>&lt;</b> « strictement inférieur à »<br/>
+			<b>&gt;=</b> « supérieur ou égal à »<br/>
+			<b>&lt;=</b> « inférieur ou égal à »<br/>
+			</p>
+			<strong>Opérateurs logiques</strong><br/>
+			
+<!--voir : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/Op%C3%A9rateurs_logiques -->
+<p>
+Il est possible d’exprimer des critères composés grâces aux opérateurs logiques :
+</p>
+<p>
+<b>||</b>   « OU »<br/>
+<b>&&</b>    « ET »<br/>
+<b>! </b>   « NON »<br/>
+</p>
+
+<textarea rows="17">
+var nbVies = 1;
+if (nbVies == 0) // si le nombre de vies du joueur est égal à 0
+{
+	// insctructions
+	console.log( " Game Over " );
+}
+
+var isGameStarted = false;
+
+// si le nombre de vies du joueur est strictement supérieur à 0 et que la partie n’a pas commencé<br/>
+if (nbVies > 0 && !isGameStarted)
+{
+	// insctructions
+	console.log( " Start Game ! " );
+}</textarea>
+			
+			</div>
+		</section>
+		<section id="prog_3_content" class="content prog_content">
+			<div id="titre_prog_3" class="title_content title_prog">PROGRAMMATION | Les boucles</div>
+			<div class="container">
+			<p>Les boucles <strong>for</strong> ("pour") permettent la répétition d’un bloc d'instructions de façon itérative un certain nombre de fois.</p>
+			<textarea rows="8">
+var decors = ["désert", "jungle", "ville" ] ;
+let i ;
+
+for (i=0 ; i  decors.length ; i++)
+{
+	console.log (" Decor "  +  (i+1) + " : " + decors[i]) ;
+}
+			</textarea>
+			<p>Les boucles <strong>while</strong> ("tant que") répètent un bloc d'instructions tant que le critère spécifié est valide.</p>
+			<textarea rows="8">
+var max = 100;
+let i = 0;
+
+while(i < max)
+{
+	console.log( i est inférieur à max (' + i + ')');
+	i +=10;
+}
+			</textarea>
+			</div>
+			<div class="container">
+				<p>Méthodes sur les tableaux :<br/>
+				<a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array#m%C3%A9thodes_des_instances" target="_blank">
+					https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array#m%C3%A9thodes_des_instances
+				</a>
+				</p>
+			</div>
+		</section>
+		<section id="prog_4_content" class="content prog_content">
+			<div id="titre_prog_4" class="title_content title_prog">PROGRAMMATION | Les fonctions</div>
+			<div class="container">
+			<p>Une fonction est un morceau de programme réutilisable qui peut être exécuté sur appel. Elle peut prendre un ou plusieurs paramètres en entrée mais aussi retourner une valeur en sortie.</p>
+			<textarea rows="20">
+// Fonction startGame
+function starGame()
+{
+	score = 0;
+	nbVies = 5;
+}
+
+// Fonction addScore
+function addScore( nbPoints )
+{
+	var newScore = score + nbPoints;
+	return newScore;
+}
+
+var score, nbVies;
+
+// Appel aux fonctions startGame puis addScore
+startGame () ;
+score = addScore(10) ;
+		</textarea>
+			</div>
+		</section>
+	</section>
+	
+	
+	<section class="section_container" id="section_3">
+	
+	<!-- UTILISER JQUERY -->
+	<!-- <section id="jquery_1_content" class="content jquery_content">
+		<div id="titre_jquery_1" class="title_content title_jquery">HTML & CSS | Premiers pas</div>
+		<div class="container">
+		<strong>Intégration de la bibliothèque jQuery + jQuery mobile + votre script : </strong><br/>
+		Dans votre fichier HTML, Avec l'adresse absolue du fichier jQuery :<br/>
+		
+<textarea rows="5"><body>
+	
+	... Contenu HTML
+	
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+	<script src="scripts/scripts.js"></script>
+</body>
+		</textarea>
+
+		<br/><br/> 
+		<strong>Attendre que le document soit chargé : </strong><br/>
+		Dans votre fichier '<b>game.js</b>' écrivez : <br/>
+		<textarea rows="10">$(document).ready(function()
+{
+	// Ici le document est chargé, je peux écrire mon code jquery...
+	
+	/*
+		NB : Ceci est un commentaire javascript
+		Chaque instruction doit être terminée par " ; "
+	*/
+});</textarea>
+		
+	</div>
+		<br/>
+		<span class="back">( > Retour au sommaire)</span>
+		
+	</section>
+
+-->
+
+
+
+	
+	
+	
+	
+	<section id="jquery_1_content" class="content jquery_content">
+		<div id="titre_jquery_1" class="title_content title_jquery">HTML & CSS | Sélection d'un élément</div>
+		<div class="container">
+		<strong>Sélection d'un type de balise HTML :</strong>
+		<br/>
+		<input value="document.getElementsByTagName('balise') // JS" /><br/>
+		<input value="$('balise') // jQuery">
+		<br/>
+		<br/>
+		<strong>Sélection d'un élément par son 'id' :</strong>
+		<br/>
+		<input value="document.getElementById('id') // JS"/><br/>
+		<input value="$('#id') // jQuery"/>
+		<br/>
+		<br/>
+		<strong>Sélection d'un élément par sa 'class' :</strong>
+		<br/>
+		<input value="document.getElementsByClassName('class') // JS"/>
+		<br/>
+		<input value="$('.class') // jQuery"/>
+		<br/>
+		<br/>
+		<strong>Sélection par sélecteur CSS</strong>
+		<input value="document.querySelector('selecteur css') // JS"/>
+		<br/>
+		<input value="$('selecteur css') // jQuery"/>
+		</div>	
+		<br/>
+		<span class="back">( > Retour au sommaire)</span>
+
+	</section>
+	<section id="jquery_2_content" class="content jquery_content">
+		<div id="titre_jquery_2" class="title_content title_jquery">HTML & CSS | Modification CSS 1/2 (class)</div>
+		<div class="container">
+			<strong>Ajouter une class à un élément HTML :</strong>
+			<br/>
+			<input value="document.getElementById('id').classList.add('nomClass'); // JS"/>
+			<br/>
+			<input value="$('#monElement').addClass('nomClass'); // jQuery"/>
+			<br/>
+			<br/>
+			<strong>Retirer une class à un élément :</strong>
+			<br/>
+			<input value="document.getElementById('id').classList.remove('nomClass'); // JS"/>
+			<br/>
+			<input value="$('#monElement').removeClass('nomClass'); // jQuery"/>
+			<br/>
+			<br/>
+			<strong>Activer/Désactiver une class sur un élément :</strong>
+			<input value="document.getElementById('id').classList.toggle('nomClass'); // JS"/>
+			<br/>
+			<input value="$('#monElement').toggleClass('nomClass'); // jQuery"/>
+			<br/>
+			<br/>
+			<strong>NB : pour savoir si un élement possède une class nommée "nomClass", on écrit :</strong>
+			<br/>
+			<textarea rows="5">if($('#monElement').hasClass( 'nomClass' ))
+{
+	// Action
+}</textarea>
+			
+			
+			
+		</div>
+			<br/>
+			<span class="back">( > Retour au sommaire)</span>
+
+	</section>
+	<section id="jquery_3_content" class="content jquery_content">
+		
+		<div id="titre_jquery_3" class="title_content title_jquery">HTML & CSS | Modification CSS 2/2 (propriétés)</div>
+		<div class="container">
+			<strong>Attribuer une valeur à une propriété CSS :</strong>
+			<br/>
+			<input value="document.getElementById('monElement').style.nomPropriete = 'valeur'; // JS"/>
+			<br/>
+			<input value="$('#monElement').css('nomPropriete', 'valeur'); // jQuery"/>
+			<br/>
+			<br/>
+			<strong>Modifier la valeur de plusieurs propriétés CSS :</strong>
+			<br/>
+			<input value="$('#monElement').css({propriete1:valeur1, propriete2:valeur2, propriete3:valeur3});"/>
+			<br/>
+			<br/>
+			<strong>NB :</strong> Pour connaitre la valeur associée à une propriété on peut utiliser :
+			<br/>
+			<input value="console.log( document.getElementById('monElement').style.nomPropriete );"/>
+			<br/>
+			<input value="alert( $('#monElement').css('nomPropriete') );"/>
+		</div>
+			<br/>
+			<span class="back">( > Retour au sommaire)</span>
+		
+	</section>
+
+	<section id="jquery_4_content" class="content jquery_content">
+		
+		<div id="titre_jquery_4" class="title_content title_jquery">HTML & CSS | Modification HTML</div>
+		<div class="container">
+			<strong>Modifier la valeur d'un attribut HTML :</strong>
+			<br/>
+			<input value="document.getElementById('image1').setAttribute('src', 'images/paysage.jpg'); // JS"/>
+			<br/>
+			<input value="$('#image1').attr('src', 'images/paysage.jpg'); // jQuery"/>
+			<br/>
+			<br/>
+			<strong>Définir le contenu HTML d'une balise :</strong>
+			<br/>
+			<input value="document.getElementById('monElement').innerHTML = '<p>Bonjour !</p>'; // JS">
+			<br/>
+			<input value="$('#monElement').html('<p>Bonjour !</p>'); // jQuery">
+			<br/>
+			<br/>
+			<strong>Crée un élément HTML :</strong>
+			<input value="var mon div = document.createElement('div')); // JS">
+			<br/>
+			<input value="var mon div = $('<div>'); // jQuery">
+			<br/>
+			<br/>
+			<strong>Ajouter du contenu HTML à une balise :</strong>
+			<input value="document.getElementById('maListe').appendChild(document.createElement('li')); // JS">
+			<input value="$('#maListe').append('<li>item de liste</li>'); // jQuery">
+			<br/>
+		</div>
+			<br/>
+			<span class="back">( > Retour au sommaire)</span>
+	</section>
+</section>
+	<!-- ANIMATION -->
+		<section class="section_container" id="section_4">
+	<section id="anim_1_content" class="content anim_content">
+		<div id="titre_anim_1" class="title_content title_anim">ANIMATION | Gestion du temps</div>
+		<div class="container">	
+		<strong>Délai :</strong><br/>
+		<input type="text" value="setTimeout(maFonction, 500); // JS" />
+		<br/>
+		<br/>
+		<strong>Interval :</strong><br/>
+		<input type="text" value="monInterval = setInterval(maFonction, 500); // JS" />
+		<input type="text" value="clearInterval(monInterval); // JS" />
+		<br/>
+		<br/>
+		<strong>RequestAnimationFrame :</strong><br/>
+		<br/>
+		 <input type="text" value="var reqID = window.requestAnimationFrame(function(){...}); // JS" />
+		 <br/>
+		 <input type="text" value="window.cancelAnimationFrame(reqID); // JS" />
+	</div>
+			<br/>
+			<span class="back">( > Retour au sommaire)</span>
+
+	</section>	
+		
+	<section id="anim_2_content" class="content anim_content">
+		<div id="titre_anim_2" class="title_content title_anim">ANIMATION | Effets prédéfinis</div>
+		<div class="container">
+			<strong>hide() et show() : </strong>Montre ou cache un élément.
+			<br/>
+			<input value ="$('#monElement').hide(); $('#monElement').show();"/>
+			<br/>
+			<strong>fadeIn('vitesse' ou durée) : </strong>Fait apparaitre un élément en fondu.
+			<br/>
+			<input value ="$('#monElement').fadeIn('fast');  // slow, fast, normal ou nombre (ms)"/>
+			<br/>
+			<strong>fadeOut('vitesse' ou durée) : </strong>Fait disparaitre un élément en fondu.
+			<br/>
+			<input value ="$('#monElement').fadeOut('fast');  // slow, fast, normal ou nombre (ms)"/>
+			<br/>
+			<strong>slideUp('vitesse' ou durée) : </strong>Rétracte un élément vers le haut.
+			<br/>
+			<input value ="$('#monElement').slideUp('fast');  // slow, fast, normal ou nombre (ms)"/>
+			<br/>
+			<strong>slideDown('vitesse' ou durée) : </strong>Déploie un élément vers le bas.
+			<br/>
+			<input value ="$('#monElement').slideDown('fast');  // slow, fast, normal ou nombre (ms)"/>
+			<br/>
+			<strong>slideToggle('vitesse' ou durée) : </strong>Alterne rétracte/déploie.
+			<br/>
+			<input value ="$('#monElement').slideToggle('fast');  // slow, fast, normal ou nombre (ms)"/>
+			<br/>
+			<br/>
+			Documentation : <a href="http://api.jquery.com/category/effects/" target="_blank">http://api.jquery.com/category/effects/</a>
+		</div>
+			<br/>
+			<span class="back">( > Retour au sommaire)</span>
+
+	</section>
+	
+	<section id="anim_3_content" class="content anim_content">
+		<div id="titre_anim_3" class="title_content title_anim">ANIMATION | Fonction Animate()</div>
+		<div class="container">
+		<strong>animate('propriété', 'valeur', 'vitesse' ou durée) :</strong>
+		<br/>
+		Cette fonction permet d'animer une propriété CSS d'un élément :
+		<br/>
+		<input value="$('#monElement').animate('width', '100px', 300);"/>
+		<br/>
+		<strong>animate({'propriété_1':'valeur_1','propriété_2':'valeur_2'...}, 'vitesse' ou durée) :</strong>
+		<br/>
+		...Ou plusieurs à la fois :
+		<input value="$('#monElement').animate({width:'100px', height:'200px'}, 300);"/>
+		<br/>
+		Quelques options utiles (duration, progress, complete...) :
+		<br/>
+		<input value="$('#monElement').animate({width:'100px'}, {duration:300, complete:maFonction});"/>
+		<br/>
+		Documentation : <a href="http://api.jquery.com/animate/" target="_blank">http://api.jquery.com/animate/</a>
+		</div>
+		<br/>
+		<span class="back">( > Retour au sommaire)</span>
+	</section>
+	</section>
+	
+	</section>
+	
+	<section class="section_container" id="section_5">
+			<section id="event_1_content" class="content event_content">
+				<div id="titre_event_1" class="title_content title_event">ÉVÉNÉMENTS | Souris</div>
+				<div class="container">
+					<input type="text" value="monElement.addEventListener('type', callback, data); // Ajout d'un événement en JS" />
+					<br/>
+					<strong>Événements click, mousemove, mouseenter et mouseleave :</strong><br/>
+					La fonction .on() permet d'écouter des événements, elle s'utilise de la manière suivante :<br/>
+					<textarea rows="14">$('#monElement').on('click', function(e){
+		// Action sur le clic de l'élément
+		
+		// $(this) ou e.currentTarget réprésentent l'élément à l'origine de l'événement
+	
+});
+
+$('#monElement').on('mousemove', function(e){
+		
+		// Action lorsque le curseur se déplace
+		
+		// $(this) ou e.currentTarget réprésentent l'élément à l'origine de l'événement
+		
+		// e.clientX : Position horizontale du curseur
+		// e.clientY : Position verticale du curseur
+});
+	
+$('#monElement').on('mouseenter', function(e){
+		// Action au survol de l'élément
+		
+		// $(this) ou e.currentTarget réprésentent l'élément à l'origine de l'événement
+});				
+
+$('#monElement').on('mouseleave', function(e){
+		// Action lorsque le curseur sort de l'élément
+		
+		// $(this) ou e.currentTarget réprésentent l'élément à l'origine de l'événement
+});				
+		</textarea>
+					<br/>
+					<br/>
+					Documentation :
+					<ul>
+						<li><a href="http://api.jquery.com/on/" target="_blank">http://api.jquery.com/on/</a></li>
+						<li><a href="http://api.jquery.com/category/events/mouse-events/" target="_blank">http://api.jquery.com/category/events/mouse-events/</a></li>
+					</ul>
+				<p>Événements tactiles :
+					<ul>
+						<li><a href="https://developer.mozilla.org/fr/docs/Web/API/Touch_events" target="_blank">https://developer.mozilla.org/fr/docs/Web/API/Touch_events</a></li>
+					</ul>
+				</p>
+			</div>
+				<span class="back">( > Retour au sommaire)</span>
+			</section>
+			
+	<!--		<section id="event_2_content" class="content event_content">
+				<div id="titre_event_2" class="title_content title_event">ÉVÉNÉMENTS | Tactile</div>
+				<div class="container">
+					<br/>
+					<strong>Événements swipe, swipeleft, swiperight tap, taphold :</strong><br/>
+					Ici aussi, on utilise .on() et .off() pour détecter les interactions tactiles<br/>
+					<textarea rows="14">$('#monElement').on('tap', function(e){	
+		// Action lorsque l'utilisateur touche l'élément
+});
+	
+$('#monElement').on('taphold', function(){
+		// Action lorsque l'utilisateur touche l'élément et maintient la pression pendant 1s
+});				
+
+$('#monElement').on('swipeleft', function(){
+		// Action lorsque l'utilisateur "glisse" vers la gauche
+});
+
+$('#monElement').on('swiperight', function(){
+		// Action lorsque l'utilisateur "glisse" vers la droite
+});
+		</textarea>
+					<br/>
+					<br/>
+					Documentation : <a href="http://api.jquerymobile.com/category/events/" target="_blank">http://api.jquerymobile.com/category/events/</a><br>
+		</div>	
+				<br/>
+				<span class="back">( > Retour au sommaire)</span>
+			</section>-->
+			
+			
+			<section id="event_2_content" class="content event_content">
+				<div id="titre_event_2" class="title_content title_event">ÉVÉNÉMENTS | Clavier</div>
+				<div class="container">
+					<strong>Événements keydown() et keyup() :</strong><br/>
+					Là encore, on utilise .on() et .off() pour écouter un événement clavier
+					<textarea rows="10">$(window).on('keydown', function(e) // Appelée lorsqu'une touche est enfoncée
+{
+	// e.key Représente le code de la touche
+});
+
+$(window).on('keyup', function(e) // Appelée lorsqu'une touche est relâchée
+{
+	// e.key Représente le code de la touche
+});
+					</textarea>
+					<br/><br/>
+Correspondance des valeurs de e.key : <br/>
+					<textarea rows="16">DOWN	= 'ArrowDown';
+UP	= 'ArrowUp';
+LEFT	= 'ArrowLeft';
+RIGHT	= 'ArrowRight';
+
+Entrée	= 'Enter';
+
+Echap	= 'Escape';
+Espace	= ' ';
+					</textarea>
+					<br/><br/>
+					Documentation :
+					<ul><li><a href="http://api.jquery.com/on/" target="_blank">http://api.jquery.com/on/</a></li>
+<li><a href="http://api.jquery.com/category/events/keyboard-events/" target="_blank">http://api.jquery.com/category/events/keyboard-events/</a></li></ul>
+			</div>
+				<br/>
+				<span class="back">( > Retour au sommaire)</span>
+			</section>
+			
+			<section id="event_3_content" class="content event_content">
+				<div id="titre_event_3" class="title_content title_event">ÉVÉNÉMENTS | Navigateur</div>
+				<div class="container">
+					<strong>Événement resize :</strong>	
+					<textarea rows="15">$(window).on('resize', function()
+{
+	// Appelé lors du redimensionnement
+	// $(window).width(), représente la largeur de la fenêtre en pixels
+	// $(window).height(), représente la hauteur de la fenêtre en pixels
+
+	if($(window).height() < 600) // (si hauteur inférieure à 600 px)
+	{
+		// Action
+	}else{
+		// Sinon, autre action
+	}
+});</textarea>
+
+<br/>
+<strong>Événement scroll :</strong>
+					<textarea rows="5" cols="10">$(window).on('scroll', function(){ // Appelé lors du défilement
+	//$(window).scrollTop(), représente la valeur de défilement vertical;
+	//$(window).scrollLeft(), représente la valeur de défilement horizontal;
+});</textarea>
+					<br/><br/>
+					Documentation :
+					<ul><li><a href="http://api.jquery.com/on/" target="_blank">http://api.jquery.com/on/</a></li>
+	<li><a href="http://api.jquery.com/category/events/browser-events/" target="_blank">http://api.jquery.com/category/events/browser-events/</a></li></ul>
+					
+					
+					
+					
+			</div>
+				<br/>
+				<span class="back">( > Retour au sommaire)</span>
+			</section>
+	</section>
+	
+	
+	
+	<section class="section_container" id="section_6">
+	
+	<section id="menuanim_1_content" class="content menuanim_content">
+		<div id="titre_menuanim_1" class="title_content title_menuanim">EXEMPLES | Démos</div>
+		<div class="container">
+			<!-- EXEMPLE 1 -->
+			<strong>Exemple 1 :</strong><br/>
+			<a href="exemples/guess/index.html" target="exemple_1">Devine à quoi je pense ?</a>
+			<br/>
+			<br/>
+			<strong>Exemple 2 :</strong><br/>
+			<a href="exemples/snake/index.html" target="exemple_2">Snake-it !</a>
+			<br/>
+			<br/>
+			<strong>Exemple 3 :</strong><br/>
+			<a href="exemples/kassBrick/index.html" target="exemple_3">Kass-Bricks !</a>
+			<!--<div class="exemples_img">
+				<strong>Exemple 1 :</strong><br/>
+				<a href="exemples/exemple_1/index.html" target="exemple_1"><img src="images/exemple_1.jpg" alt="exemple 1" /> </a>
+			</div>
+			<div class="exemples_img">
+				<strong>Exemple 2 :</strong><br/>
+				<a href="exemples/exemple_2/index.html" target="exemple_2"><img src="images/exemple_2.jpg" alt="exemple 2" /> </a>
+			</div>
+			<div class="exemples_img">
+				<strong>Exemple 3 :</strong><br/>
+				<a href="exemples/exemple_3/index.html" target="exemple_3"><img src="images/exemple_3.jpg" alt="exemple 3" /> </a>
+			</div>-->
+			
+	
+		</div>
+		<br/>
+		<span class="back">( > Retour au sommaire)</span>
+	</section>
+	<!--
+	<section id="menuanim_2_content" class="content menuanim_content">
+		<div id="titre_menuanim_2" class="title_content title_menuanim">EXEMPLES | Sources</div>
+		<div class="container">
+		
+			<br/>	
+				<strong>Exemple 1 - télécharger les sources : </strong><a href="downloads/exemple_1.zip">exemple_1.zip</a><br/>
+				<strong>Exemple 2 - télécharger les sources : </strong><a href="downloads/exemple_2.zip">exemple_2.zip</a><br/>
+				<strong>Exemple 3 - télécharger les sources : </strong><a href="downloads/exemple_3.zip">exemple_3.zip</a><br/>
+				
+				
+			</div>
+		<br/>
+		<span class="back">( > Retour au sommaire)</span>
+	</section>
+	!-->
+	</section>
+
+	
+	<!--
+	<section id="link_1_content" class="content links_content">
+		<div id="titre_title_links_1" class="title_content title_links">LIENS | Liens utiles</div>
+		<br/>
+		<strong>Le Site du Zéro : </strong><br/>
+	<a href="http://www.siteduzero.com/tutoriel-3-689034-simplifiez-vos-developpements-javascript-avec-jquery.html" target="_blank">http://www.siteduzero.com/tutoriel-3-689034-simplifiez-vos-developpements-javascript-avec-jquery.html</a>
+	<br/><br/>
+	<strong>Documentatipn jQuery (fr) : </strong><br/>
+	<a href="http://jquery.developpeur-web2.com/documentation.php" target="_blank">http://jquery.developpeur-web2.com/documentation.php</a>
+		<br/><br/>
+		<span class="back">( > Retour au sommaire)</span>
+	</section>
+	-->
+		
+		
+	<div id="ui_container">
+		<div id="tip">Survol</div>
+		<img id="btnPrev" src="images/ui/btnPrev.png"/>
+		<div id="numPage">0/0</div>
+		<img id="btnNext" src="images/ui/btnNext.png"/>
+	</div>
+	
+	<!-- <script src="scripts/jquery.min.js"></script> -->
+	
+<!-- <script src="http://code.jquery.com/jquery-2.0.3.js"></script> -->
+	<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js"></script>-->
+	<!-- Pluggin pour animer la position du background
+	<script src="scripts/bgpos.js"></script> -->
+	
+		<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+		<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+		<script src="scripts/jquery.easing.1.3.js"></script>
+		<script src="scripts/scripts.js"></script>
+	
+	</body>
+</html>

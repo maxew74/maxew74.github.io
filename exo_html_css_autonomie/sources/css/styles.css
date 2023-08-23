@@ -1,0 +1,78 @@
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	overflow:hidden;
+
+
+}
+
+:root{
+	--dark-color:64, 34, 32;
+	--light-color:#bc8861;
+}
+
+html, body{
+
+	position:absolute;
+	top:0;
+	left:0;
+	overflow-y:auto;
+	width:100vw;
+	height:100vh;
+}
+
+html{
+	background-image:url("../medias/fond.png");
+	background-attachment:fixed;
+}
+
+body{
+	color:white;
+}
+
+
+
+
+
+footer{
+	position:relative;
+	height:80px;
+	width:100%;
+	background-color:black;
+	color:white;
+	max-height:5vh;
+	font-size:10pt;
+	display:none;
+}
+
+#btnSum{
+	width:60px;
+	height:60px;
+	background-color:#050505;
+	color:white;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	border-top:10px solid white;
+	border-right:10px solid white;
+	border-top-right-radius:100%;
+	display:block;
+	z-index:100;
+	transform-origin:0% 100%;
+	transition:all 0.2s;
+	
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+#btnSum:hover{
+	width:100px;
+	height:100px;
+}
+
+nav:target ~ #btnSum{
+	transform:scale(0.001);
+}
+

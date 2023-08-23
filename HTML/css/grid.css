@@ -1,0 +1,268 @@
+:root{
+    --containerColor:rgb(23, 180, 83);
+    --cellModelColor:rgba(0, 0, 0, 0.05);
+    --cellColor:rgba(0, 174, 255, 0.5);
+    --cellLabelColor:rgb(0, 120, 175, 0.8);
+    --trackColor:rgba(255, 219, 101, 0.35);
+    --trackLabelColor:rgb(187, 145, 9);
+    --lineColor:rgba(61, 61, 61, 1);
+    --zoneColor:rgba(199, 63, 226, 0.555);
+    --zoneLabelColor:rgba(154, 4, 184, 0.8);
+    color:white;
+    font-size:20px;
+}
+
+#gridContainer{
+    width:100%;
+    height:100%;
+    border:1px solid gray;
+    
+    grid-template-columns:  [gridStart] 120px      repeat(5, [colStart] minmax(120px, 1fr) [colEnd])   10px [gridEnd];
+    grid-template-rows:     [gridStart] 50px       repeat(5, [rowStart] minmax(50px, 1fr) [rowEnd])   10px [gridEnd];
+
+    column-gap: 10px;
+    row-gap: 10px;
+    
+    display:grid;
+}
+
+.item_model{
+    background-color:var(--cellModelColor);
+    grid-column: colStart colEnd;
+    grid-row: rowStart colEnd;
+    
+}
+/* ******************************************** */
+.item_model:nth-child(1){
+    grid-column: colStart 1 / colEnd 1;
+    grid-row: rowStart 1 / rowEnd 1;
+}
+.item_model:nth-child(2){
+    grid-column: colStart 2 / colEnd 2;
+    grid-row: rowStart 1 / rowEnd 1;
+}
+.item_model:nth-child(3){
+    grid-column: colStart 3 / colEnd 3;
+    grid-row: rowStart 1 / rowEnd 1;
+}
+.item_model:nth-child(4){
+    grid-column: colStart 4 / colEnd 4;
+    grid-row: rowStart 1 / rowEnd 1;
+}
+
+.item_model:nth-child(5){
+    grid-column: colStart 5 / colEnd 5;
+    grid-row: rowStart 1 / rowEnd 1;
+}
+
+/* ******************************************** */
+
+.item_model:nth-child(6){
+    grid-column: colStart 1 / colEnd 1;
+    grid-row: rowStart 2 / rowEnd 2;
+}
+.item_model:nth-child(7){
+    grid-column: colStart 2 / colEnd 2;
+    grid-row: rowStart 2 / rowEnd 2;
+}
+.item_model:nth-child(8){
+    grid-column: colStart 3 / colEnd 3;
+    grid-row: rowStart 2 / rowEnd 2;
+}
+.item_model:nth-child(9){
+    grid-column: colStart 4 / colEnd 4;
+    grid-row: rowStart 2 / rowEnd 2;
+}
+.item_model:nth-child(10){
+    grid-column: colStart 5 / colEnd 5;
+    grid-row: rowStart 2 / rowEnd 2;
+}
+/* ******************************************** */
+.item_model:nth-child(11){
+    grid-column: colStart 1 / colEnd 1;
+    grid-row: rowStart 3 / rowEnd 3;
+}
+.item_model:nth-child(12){
+    grid-column: colStart 2 / colEnd 2;
+    grid-row: rowStart 3 / rowEnd 3;
+}
+.item_model:nth-child(13){
+    grid-column: colStart 3 / colEnd 3;
+    grid-row: rowStart 3 / rowEnd 3;
+}
+.item_model:nth-child(14){
+    grid-column: colStart 4 / colEnd 4;
+    grid-row: rowStart 3 / rowEnd 3;
+}
+.item_model:nth-child(15){
+    grid-column: colStart 5 / colEnd 5;
+    grid-row: rowStart 3 / rowEnd 3;
+}
+/* ******************************************** */
+.item_model:nth-child(16){
+    grid-column: colStart 1 / colEnd 1;
+    grid-row: rowStart 4 / rowEnd 4;
+}
+.item_model:nth-child(17){
+    grid-column: colStart 2 / colEnd 2;
+    grid-row: rowStart 4 / rowEnd 4;
+}
+.item_model:nth-child(18){
+    grid-column: colStart 3 / colEnd 3;
+    grid-row: rowStart 4 / rowEnd 4;
+}
+.item_model:nth-child(19){
+    grid-column: colStart 4 / colEnd 4;
+    grid-row: rowStart 4 / rowEnd 4;
+}
+.item_model:nth-child(20){
+    grid-column: colStart 5 / colEnd 5;
+    grid-row: rowStart 4 / rowEnd 4;
+}
+/* ******************************************** */
+.item_model:nth-child(21){
+    grid-column: colStart 1 / colEnd 1;
+    grid-row: rowStart 5 / rowEnd 5;
+}
+.item_model:nth-child(22){
+    grid-column: colStart 2 / colEnd 2;
+    grid-row: rowStart 5 / rowEnd 5;
+}
+.item_model:nth-child(23){
+    grid-column: colStart 3 / colEnd 3;
+    grid-row: rowStart 5 / rowEnd 5;
+}
+.item_model:nth-child(24){
+    grid-column: colStart 4 / colEnd 4;
+    grid-row: rowStart 5 / rowEnd 5;
+}
+.item_model:nth-child(25){
+    grid-column: colStart 5 / colEnd 5;
+    grid-row: rowStart 5 / rowEnd 5;
+}
+/* ******************************************** */
+.lineLabel{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.lineLabel .label{
+    color:var(--lineColor);
+    text-align:center;
+    padding:5px;
+    display:block;
+}
+
+.vlineLabel{
+    grid-column:3 / span 1;
+    grid-row:1 / span 1;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.hlineLabel{
+    grid-column:1 / span 1;
+    grid-row:3 / span 1;
+    display:flex;
+    justify-content: flex-end;
+    align-items:flex-start;
+}
+
+.lineVisual{  display:flex;
+    justify-content: center;
+    align-items:center
+}
+
+.vlineVisual{
+    grid-column: 2 / span 2;
+    grid-row:gridStart / gridEnd;
+}
+
+.hlineVisual{
+    grid-column:gridStart / gridEnd;
+    grid-row:2 / span 2;
+}
+
+.line{
+    border:1px dotted var(--lineColor); border-collapse: collapse;
+}
+
+.vlineVisual .line{
+    width:1px;
+    height:100%;
+}
+
+.hlineVisual .line{
+    width:100%;
+    height:1px;
+}
+
+/* ********************* */
+.trackVisual{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    background-color:var(--trackColor);
+    color:var(--trackLabelColor);
+    text-align:center;
+    padding:10px;
+}
+
+.vtrack{
+    flex-direction:column;
+    grid-column:4/ span 1;
+    grid-row:rowStart / rowEnd 5;
+    text-orientation: sideways-right;
+}
+
+.htrack{
+    flex-direction:row;
+    grid-column: colStart / colEnd 5;
+    grid-row:4 / span 1;
+}
+
+/* ********************* */
+
+.gridContainer{
+    border:4px solid var(--containerColor);
+    grid-column: colStart / colEnd 5;
+    grid-row:rowStart / rowEnd 5;
+}
+
+.containerLabel{
+    grid-column: 2 / span 1;
+    grid-row:   gridStart 1 / span 1;
+    color:var(--containerColor);
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+/* ********************* */
+.cellContainer{
+    background-color:var(--cellColor);
+    border:2px solid var(--cellLabelColor);
+    color:var(--cellLabelColor);
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* ********************* */
+.zoneContainer{
+    background-color:var(--zoneColor);
+    border:2px solid var(--zoneLabelColor);
+    color:var(--zoneLabelColor);
+    grid-column: 5 / span 2;
+    grid-row: 5 / span 2;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}

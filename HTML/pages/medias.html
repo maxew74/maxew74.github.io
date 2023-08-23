@@ -1,0 +1,47 @@
+﻿<div class="myText">
+   
+		<p class="chapeau">Intégration d'un son:</p>
+		
+		<strong>&lt;audio controls&gt;</strong><br/>
+		<strong class="marg1">&lt;source src="</strong>sons/tigre.mp3<strong>" type="</strong>audio/mp3<strong>" /&gt;</strong><br/>
+		<strong class="marg1">&lt;source src="</strong>sons/tigre.ogg<strong>" type="</strong>audio/ogg<strong>" /&gt;</strong><br/>
+		 <span class="marg1">Le son semble ne pas fonctionner avec votre navigateur...</span><br/>
+		<strong>&lt;/audio&gt;</strong><br/>
+		
+		
+	</div>
+	<div class = "demo">
+		<!-- <audio src="sons/tigre.mp3" controls>Le son semble ne pas fonctionner avec votre navigateur...</audio><br/> -->
+		<audio controls>
+		<source src="sons/tigre.mp3" type="audio/mp3" />
+		<!--<source src="sons/tigre.wav" type="audio/wav" />-->
+	La vidéo semble ne pas fonctionner sur votre navigateur...
+</audio> 
+<br/>
+	</div>
+	
+	<br/>
+	
+	<div class="myText">
+   
+	<p class="chapeau">Intégration d'une vidéo :</p>
+	<strong>&lt;video controls="</strong>controls<strong>" poster="</strong>videos/preview.jpg<strong>" preload="</strong>none<strong>"&gt;</strong><br/>
+			<strong class="marg1">&lt;source src="</strong>videos/video_chat.webm<strong>" type="</strong>video/webm<strong>" /&gt;</strong><br/>
+			<strong class="marg1">&lt;source src="</strong>videos/video_chat.webm<strong>" type="</strong>video/webm<strong>" /&gt;</strong><br/>
+			 <span class="marg1">La vidéo semble ne pas fonctionner avec votre navigateur...</span><br/>
+		<strong>&lt;/video&gt;
+	</div>
+	
+	<div class = "demo">
+		
+		<video id="player_video" controls="controls" poster="videos/preview.jpg" preload>
+			<!--<source src="videos/video_chat.webm" type="video/webm" />-->
+			<source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4" />
+			La vidéo semble ne pas fonctionner sur votre navigateur...
+		</video>
+		
+	</div>
+	
+	<!--<div class="myText">
+		<p class="chapeau">Exemples de médias (vidéo + son) : <a href="exemples_medias.zip">exemple_medias.zip</a></p>
+	</div>-->
